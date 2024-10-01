@@ -172,7 +172,7 @@
 
 		<!-- Slider -->
 
-		<div class="main_slider" style="background-image:url(images/slider_1.jpg)">
+		<div class="main_slider" style="background-image:url(images/banner.jpg)">
 			<div class="container fill_height">
 				<div class="row align-items-center fill_height">
 					<div class="col">
