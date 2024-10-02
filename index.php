@@ -95,7 +95,7 @@
 								<ul class="navbar_menu">
 									<li><a href="#">home</a></li>
 									<li><a href="#">shop</a></li>
-									<li><a href="#">promotion</a></li>
+									<li><a href="#">FAQs</a></li>
 									<li><a href="#">pages</a></li>
 									<li><a href="#">blog</a></li>
 									<li><a href="contact.php">contact</a></li>
@@ -162,7 +162,7 @@
 					</li>
 					<li class="menu_item"><a href="#">home</a></li>
 					<li class="menu_item"><a href="#">shop</a></li>
-					<li class="menu_item"><a href="#">promotion</a></li>
+					<li class="menu_item"><a href="#">FAQs</a></li>
 					<li class="menu_item"><a href="#">pages</a></li>
 					<li class="menu_item"><a href="#">blog</a></li>
 					<li class="menu_item"><a href="#">contact</a></li>
@@ -172,12 +172,12 @@
 
 		<!-- Slider -->
 
-		<div class="main_slider" style="background-image:url(images/banner.jpg)">
+		<div class="main_slider" style="background-image:url(images/top1.jpg)">
 			<div class="container fill_height">
 				<div class="row align-items-center fill_height">
 					<div class="col">
 						<div class="main_slider_content">
-							<h6>Spring / Summer Collection 2017</h6>
+							<h6>Spring / Summer Collection 2024</h6>
 							<h1>Get up to 30% Off New Arrivals</h1>
 							<div class="red_button shop_now_button"><a href="#">shop now</a></div>
 						</div>
