@@ -931,11 +931,13 @@ section {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	border: 5px solid #555;
+
 }
 
 .banner_category {
-	height: 50px;
-	background: #FFFFFF;
+	border: 5px solid #555;
+	background: #c0bebe;
 	min-width: 180px;
 	padding-left: 25px;
 	padding-right: 25px;
@@ -1066,6 +1068,7 @@ section {
 
 .product_image img {
 	width: 100%;
+	object-fit:scale-down;
 }
 
 .product_info {

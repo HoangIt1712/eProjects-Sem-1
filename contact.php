@@ -17,9 +17,13 @@
 	<link rel="stylesheet" type="text/css" href="plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
+
+	<div class="super_container">
 
 	<div class="super_container">
 
@@ -71,9 +75,9 @@
 											<i class="fa fa-angle-down"></i>
 										</a>
 										<ul class="account_selection">
-											<li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a>
+											<li><a href="login.php"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a>
 											</li>
-											<li><a href="#"><i class="fa fa-user-plus"
+											<li><a href="RegisterPage.php"><i class="fa fa-user-plus"
 														aria-hidden="true"></i>Register</a></li>
 										</ul>
 									</li>
@@ -86,47 +90,38 @@
 
 			<!-- Main Navigation -->
 
-			<div class="main_nav_container">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12 text-right">
-							<div class="logo_container">
-								<a href="#">Bronx<span>Luggage</span></a>
-							</div>
-							<nav class="navbar">
-								<ul class="navbar_menu">
-									<li><a href="index.html">home</a></li>
-									<li><a href="#">shop</a></li>
-									<li><a href="#">promotion</a></li>
-									<li><a href="#">pages</a></li>
-									<li><a href="#">blog</a></li>
-									<li><a href="contact.html">contact</a></li>
-								</ul>
-								<ul class="navbar_user">
-									<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-									<li class="checkout">
-										<a href="#">
-											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-											<span id="checkout_items" class="checkout_items">2</span>
-										</a>
-									</li>
-								</ul>
-								<div class="hamburger_container">
-									<i class="fa fa-bars" aria-hidden="true"></i>
-								</div>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-
+<div class="main_nav_container">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-right">
+                <div class="logo_container">
+				<a href="index.php">Bronx<span>Luggage</span></a>
+                </div>
+                <nav class="navbar">
+                    <ul class="navbar_menu">
+                        <li><a href="index.php">home</a></li>
+                        <li><a href="category.php">shop</a></li>
+                        <li><a href="page.php">pages</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                    <ul class="navbar_user">
+                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                        <li class="checkout">
+                            <a href="#">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
 		</header>
 
 		<div class="fs_menu_overlay"></div>
-
-		<!-- Hamburger Menu -->
-
 		<div class="hamburger_menu">
 			<div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
 			<div class="hamburger_menu_content text-right">
@@ -161,19 +156,19 @@
 							<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="menu_selection">
-							<li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
+							<li><a href="login.php"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
 							<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
 						</ul>
 					</li>
-					<li class="menu_item"><a href="#">home</a></li>
-					<li class="menu_item"><a href="#">shop</a></li>
-					<li class="menu_item"><a href="#">promotion</a></li>
-					<li class="menu_item"><a href="#">pages</a></li>
-					<li class="menu_item"><a href="#">blog</a></li>
-					<li class="menu_item"><a href="#">contact</a></li>
+					<li class="menu_item"><a href="index.php">home</a></li>
+					<li class="menu_item"><a href="category.php">shop</a></li>
+					<li class="menu_item"><a href="page.php">pages</a></li>
+					<li class="menu_item"><a href="blog1.php">blog</a></li>
+					<li class="menu_item"><a href="contact.html">contact</a></li>
 				</ul>
 			</div>
 		</div>
+
 
 		<div class="container contact_container">
 			<div class="row">
@@ -183,7 +178,7 @@
 
 					<div class="breadcrumbs d-flex flex-row align-items-center">
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index.php">Home</a></li>
 							<li class="active"><a href="#"><i class="fa fa-angle-right"
 										aria-hidden="true"></i>Contact</a></li>
 						</ul>
