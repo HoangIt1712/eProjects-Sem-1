@@ -1,22 +1,14 @@
 <?php
-session_start();
-include 'db.php'; // Include the database connection
-
-// Get the product ID from the query string
-$product_id = $_GET['id'];
-
-// Fetch product details from the database
-$stmt = $pdo->prepare("SELECT * FROM Products WHERE id = ?");
-$stmt->execute([$product_id]);
-$product = $stmt->fetch(PDO::FETCH_ASSOC);
-
-if (!$product) {
-    echo "Product not found!";
-    exit;
+require_once("./functions/dbp.php");
+$id = $_GET["id"];
+$sql = "select * from products where id = $id";
+$product = findById($sql);
+if($product == null){
+    header("Location: 404notfound.php");
+    die();
 }
+
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,11 +55,13 @@ if (!$product) {
                 <p><strong>In Stock:</strong> <?php echo $product['qty']; ?></p>
                 <p><strong>Description:</strong> <?php echo $product['description']; ?></p>
                     <!-- Add to Cart Button -->
-    <form method="post" action="add_to_cart.php">
-        <input type="hidden" name="id" value="<?php echo $product['id']; ?>">
-        <input type="hidden" name="buy_qty" value="1"> <!-- Default quantity -->
-        <button type="submit" class="btn btn-primary">Add to Cart</button>
-    </form>
+                    <form method="post" action="/add_to_cart.php">
+                        <div class="input-group mb-3">
+                            <input type="hidden" name="id" value="<?php echo $product["id"];?>"/>
+                            <input name="buy_qty" type="number" value="1" min="1" class="form-control" aria-label="Quantity">
+                            <button class="btn btn-danger" type="submit">Add to cart</button>
+                        </div>
+                    </form>
             </div>
         </div>
     </div>

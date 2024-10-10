@@ -1,6 +1,6 @@
 <?php 
 session_start();
-require_once("./functions/db.php");
+require_once("./functions/dbp.php");
 require_once("./functions/cart.php");
 require_once("./functions/paypal.php");
 $customer_name = $_POST["customer_name"];
@@ -84,7 +84,7 @@ if($order_id != null){
         // chuyen khach hang sang trang thanh toan cua paypal 
         header("Location:".$payment['links']['1']['href']);
     }
-    // // header("Location: /thankyou.php");
+    header("Location: /thankyou.php");
     die();
 }
 header("Location: /checkout.php");

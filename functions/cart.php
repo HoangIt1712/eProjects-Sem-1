@@ -1,5 +1,5 @@
 <?php
-require_once("db.php");
+require_once("dbp.php");
 
 function getCartItems(){
     $cart = isset($_SESSION["cart"]) ? $_SESSION["cart"] : []; // Nếu có giỏ hàng thì lấy, không thì để mảng trống
@@ -11,6 +11,7 @@ function getCartItems(){
         }
         $ids = implode(",", $ids); // Chuyển mảng ID thành chuỗi để sử dụng trong câu SQL
         $sql = "SELECT * FROM products WHERE id IN ($ids)";
+        $result = select($sql);
         foreach($result as $item){
             $items[] = [
                 "id" => $item["id"],

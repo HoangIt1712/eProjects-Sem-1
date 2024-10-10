@@ -1,5 +1,5 @@
 <?php 
-require_once("./functions/dbp.php");
+require_once("./functions/db.php");
 $sql = "select * from orders";
 $orders = select($sql);
 ?>

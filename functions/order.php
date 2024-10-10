@@ -1,5 +1,5 @@
 <?php 
-require_once("db.php");
+require_once("dbp.php");
 const PENDING = 0;
 const CONFIRM = 1;
 const SHIPPING = 2;
