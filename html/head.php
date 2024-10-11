@@ -75,10 +75,11 @@
                         <li><a href="category.php">shop</a></li>
                         <li><a href="page.php">pages</a></li>
                         <li><a href="contact.php">contact</a></li>
+						<li><a href="OrderHistoryPage.php">Order History</a></li>
                     </ul>
                     <ul class="navbar_user">
                         <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                        <li><a href="ProfilePage.php"><i class="fa fa-user" aria-hidden="true"></i></a></li>
                         <li class="checkout">
                             <a href="cartpro.php">
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>

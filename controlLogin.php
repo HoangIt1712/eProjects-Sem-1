@@ -1,6 +1,8 @@
 <?php 
 session_start(); 
 include 'db_conn.php';
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 if (isset($_POST['username']) && isset($_POST['password'])) {
 
 	function validate($data){
@@ -34,7 +36,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
             	$_SESSION['email'] = $row['email'];
             	$_SESSION['phone'] = $row['phone'];
             	$_SESSION['address'] = $row['address'];
-            	header("Location: ProfilePage.php"); // chuyển hướng tới .php khi đăng nhập thành công
+            	header("Location: index.php"); // chuyển hướng tới .php khi đăng nhập thành công
 		        exit();
             }else{
 				header("Location: index.php?error=Incorect User name or password");

@@ -59,7 +59,7 @@
                     </div>
                     
                     <div class="input-field">
-                        <input type="password" class="input" name="REpassword" placeholder="Re_Password" >
+                        <input type="password" class="input" name="REpassword" placeholder="Re-Enter Password" >
                         <i class="bx bx-lock-alt"></i>
                     </div>
                     
@@ -68,7 +68,7 @@
                     </div>
                     
                     <div class="input-field">
-                        <a href="index.php" style="font-size: 13px; display: inline-block; padding: 10px; text-decoration: none; color: white;">Already have an account?</a>
+                        <a href="login.php" style="font-size: 13px; display: inline-block; padding: 10px; text-decoration: none; color: white;">Already have an account?</a>
                     </div>
                 </div>
             </div>

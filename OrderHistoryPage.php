@@ -12,25 +12,36 @@ $result = mysqli_query($conn, $sql);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lịch Sử Mua Hàng</title>
-    <link rel="stylesheet" href="./css/order_history.css">
+    <title>Order History</title>
+        <link rel="stylesheet" href="./css/order_history.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+	<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-
+<?php include("html/head.php"); ?>
+<div class="order">
 <div class="container">
-    <h1>Lịch Sử Mua Hàng</h1>
+    <h1>Order History</h1>
 
     <table>
         <thead>
             <tr>
                 <th>Order ID</th>
-                <th>Tên sản phẩm</th>
-                <th>Số lượng</th>
-                <th>Tổng giá</th>
-                <th>Ngày mua</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+                <th>Date</th>
             </tr>
         </thead>
         <tbody>
@@ -54,6 +65,8 @@ $result = mysqli_query($conn, $sql);
         </tbody>
     </table>
 </div>
+</div>
+		<?php include("html/footer.php"); ?>
 
 </body>
 </html>

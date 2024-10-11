@@ -5,15 +5,7 @@ body {
     padding: 0;
 }
 
-.container {
-    width: 90%;
-    max-width: 800px;
-    margin: 50px auto;
-    background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 20px;
-}
+
 
 h1 {
     text-align: center;
@@ -33,7 +25,7 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50; /* Màu xanh lá cây cho header */
+    background-color: gray; /* Màu xanh lá cây cho header */
     color: white; /* Màu chữ trắng cho header */
 }
 
@@ -47,4 +39,8 @@ tr:hover {
 
 td {
     color: #555; /* Màu chữ cho các ô dữ liệu */
+}
+
+.order {
+    padding-top: 160px;
 }

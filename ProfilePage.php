@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include 'db.php';
+include 'db_conn.php';
 if (!isset($_SESSION['id'])) {
     header("Location: index.php");
     exit();
@@ -20,11 +20,21 @@ $user = mysqli_fetch_assoc($result);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/profile.css?v=<?php echo time(); ?>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+	<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
+<?php include("html/head.php"); ?>
+<div class="profile">
     <div class="container mt-5">
         <div class="row">
             <div class="col-lg-4 pb-5">
@@ -43,7 +53,7 @@ $user = mysqli_fetch_assoc($result);
    
                 <!-- Profile Settings-->
                 <div class="col-lg-8 pb-5">
-                    <form action="controllProfile.php" method="post" class="row">
+                    <form action="controlProfile.php" method="post" class="row">
                         <input class="form-control" type="hidden" name="id" value="<?php echo $user['id']; ?>" id="account-fn" readonly>
 
                         <div class="col-md-6">
@@ -81,5 +91,15 @@ $user = mysqli_fetch_assoc($result);
 
         </div>
     </div>
+    </div>
+    <?php include("html/footer.php"); ?>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="styles/bootstrap4/popper.js"></script>
+        <script src="styles/bootstrap4/bootstrap.min.js"></script>
+        <script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+        <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+        <script src="plugins/easing/easing.js"></script>
+        <script src="js/custom.js"></script>
 </body>
 </html>

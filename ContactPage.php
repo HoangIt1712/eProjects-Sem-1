@@ -11,7 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-
+<?php include("html/header.php"); ?>
 <body>
     <section class="contact">
         <div class="container">
@@ -48,5 +48,6 @@
 
     <script src="js/contact.js"></script>
 </body>
+<?php include("html/footer.php"); ?>
 
 </html>
