@@ -36,7 +36,6 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div class="super_container">
     <?php include("html/head.php"); ?>
 		<div class="fs_menu_overlay"></div>
-
         <div class="main_slider" style="background-image:url(images/store_bg.jpg)">
             <div class="container fill_height">
                 <div class="row align-items-center fill_height">

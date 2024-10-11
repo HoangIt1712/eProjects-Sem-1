@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/Login.css">
+    <link rel="stylesheet" href="./css/Login.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -15,7 +15,7 @@
     <title>Login</title>
 </head>
 <body>
-    <body>
+    <div class="register">
     <?php include("html/head.php"); ?>
 
         <form action="controlLogin.php" method="post">
@@ -30,12 +30,12 @@
      	            <?php } ?>
 
                     <div class="input-field">
-                        <input type="text" class="input" placeholder="Username" name="username" >
+                        <input type="text" class="input" placeholder="  Username" name="username" >
                         <i class="bx bx-user"></i>
                     </div>
                     
                     <div class="input-field">
-                        <input type="password" class="input" placeholder="Password" name="password" >
+                        <input type="password" class="input" placeholder="  Password" name="password" >
                         <i class="bx bx-lock-alt"></i>
                     </div>
                     
@@ -52,6 +52,15 @@
                 </div>
             </div>
         </form>
-      </body>
-</body>
+      </div>
+                    </div>
+<?php include("html/footer.php"); ?>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/custom.js"></script>
 </html>

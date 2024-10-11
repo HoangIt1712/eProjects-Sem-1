@@ -53,7 +53,7 @@ $result = mysqli_query($conn, $sql);
                         <td><?php echo $row['order_id']; ?></td>
                         <td><?php echo $row['NAME']; ?></td>
                         <td><?php echo $row['buy_qty']; ?></td>
-                        <td><?php echo number_format($row['total_price'], 2); ?> VND</td>
+                        <td><?php echo number_format($row['total_price'], 2); ?>$</td>
                         <td><?php echo date('Y-m-d'); ?></td>
                     </tr>
                     <?php
