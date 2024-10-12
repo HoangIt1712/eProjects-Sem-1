@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Oct 11, 2024 at 02:51 AM
+-- Generation Time: Oct 12, 2024 at 12:52 PM
 -- Server version: 5.7.24
 -- PHP Version: 8.3.1
 
@@ -69,16 +69,8 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `created_at`, `grand_total`, `paid`, `payment_method`, `shipping_address`, `telephone`, `customer_name`, `user_id`, `email`, `status`) VALUES
-(1, '2024-10-10 17:06:55', '1203.9600', '0.0000', '', '185 Tran Dai Nghia', 825113336, 'Nguyen Khanh', NULL, 'scwar69@gmail.com', 0),
-(2, '2024-10-10 17:23:29', '1203.9600', '0.0000', 'PAYPAL', '185 Tran Dai Nghia', 825113336, 'Nguyen Khanh', NULL, 'quockhanh.nguyen2301@gmail.com', 0),
-(3, '2024-10-11 01:43:52', '300.9900', '0.0000', 'PAYPAL', '185 Tran Dai Nghia', 825113336, 'Nguyen Khanh', NULL, 'scwar69@gmail.com', 0),
-(4, '2024-10-11 01:59:41', '300.9900', '0.0000', '', '185 Tran Dai Nghia', 825113336, 'Nguyen Khanh', NULL, 'kruwulvn@gmail.com', 0),
-(5, '2024-10-11 01:59:47', '300.9900', '0.0000', 'PAYPAL', '185 Tran Dai Nghia', 825113336, 'Nguyen Khanh', NULL, 'kruwulvn@gmail.com', 0),
-(6, '2024-10-11 02:00:05', '300.9900', '0.0000', 'PAYPAL', '185 Tran Dai Nghia', 825113336, 'Nguyen Khanh', NULL, 'kruwulvn@gmail.com', 0),
-(7, '2024-10-11 02:00:08', '300.9900', '0.0000', 'PAYPAL', '185 Tran Dai Nghia', 825113336, 'Nguyen Khanh', NULL, 'kruwulvn@gmail.com', 0),
 (8, '2024-10-11 02:28:54', '781.9700', '0.0000', 'COD', '185 Tran Dai Nghia', 825113336, 'Nguyen Khanh', NULL, 'quockhanh.nguyen2301@gmail.com', 0),
-(9, '2024-10-11 02:29:03', '781.9700', '0.0000', 'PAYPAL', '185 Tran Dai Nghia', 825113336, 'Nguyen Khanh', NULL, 'quockhanh.nguyen2301@gmail.com', 0),
-(10, '2024-10-11 02:32:49', '781.9700', '0.0000', 'PAYPAL', '185 Tran Dai Nghia', 825113336, 'Nguyen Khanh', NULL, 'scwar69@gmail.com', 0);
+(9, '2024-10-11 02:29:03', '781.9700', '0.0000', 'PAYPAL', '185 Tran Dai Nghia', 825113336, 'Nguyen Khanh', NULL, 'quockhanh.nguyen2301@gmail.com', 0);
 
 -- --------------------------------------------------------
 
@@ -161,7 +153,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `NAME`, `price`, `qty`, `thumbnail`, `description`, `category_id`) VALUES
-(1, 'Travelpro Platinum Elite 21\" Expandable Carry-On Spinner', '300.9900', -14, 'https://www.luggagepros.com/cdn/shop/products/Travelpro-Platinum-Elite-21-Expandable-Carry-On-Spinner-2_1c20af77-8a6f-4b5d-8f44-9e2889115bc6_1200x.jpg?v=1681401914', 'Maximize your carry-on with sophisticated style. The Platinum Elite 21\" Expandable Carry-On Spinner delivers big on form and function with a tip-resistant expansion that offers up to 2\" more packing capacity, deluxe tie-down system, integrated accessory pockets and a removable quart-size wet pocket that is TSA compliant and perfect for toiletries. Plus, the drop-in, fold-out suiter is specifically designed to accommodate hanging clothes and prevent wrinkling.\nBuilt-in USB port lets you power up on the go, while a dedicated powerbank pocket for your back-up battery adheres to FAA regulations. Perfect for short to medium-length trips, this carry-on spinner is crafted in style with premium fabrics, genuine leather and chrome zippers. Backed by our Built for a Lifetime Limited Worry Free Warranty.', 1),
+(1, 'Travelpro Platinum Elite 21\" Expandable Carry-On Spinner', '300.9900', 80, 'https://www.luggagepros.com/cdn/shop/products/Travelpro-Platinum-Elite-21-Expandable-Carry-On-Spinner-2_1c20af77-8a6f-4b5d-8f44-9e2889115bc6_1200x.jpg?v=1681401914', 'Maximize your carry-on with sophisticated style. The Platinum Elite 21\" Expandable Carry-On Spinner delivers big on form and function with a tip-resistant expansion that offers up to 2\" more packing capacity, deluxe tie-down system, integrated accessory pockets and a removable quart-size wet pocket that is TSA compliant and perfect for toiletries. Plus, the drop-in, fold-out suiter is specifically designed to accommodate hanging clothes and prevent wrinkling.\nBuilt-in USB port lets you power up on the go, while a dedicated powerbank pocket for your back-up battery adheres to FAA regulations. Perfect for short to medium-length trips, this carry-on spinner is crafted in style with premium fabrics, genuine leather and chrome zippers. Backed by our Built for a Lifetime Limited Worry Free Warranty.', 1),
 (2, 'Brics Ulisse 21\" Expandable Spinner', '179.9900', 41, 'https://www.luggagepros.com/cdn/shop/files/Brics-Ulisse-21-Expandable-Spinner_9dc850b5-8596-4456-9bd2-452e20b87813_1200x.jpg?v=1727379043', 'The 21\" carry-on trolley Ulisse collection from Bric\'s. This stylish yet urban looking carry-on is made out of Polypropylene. This is a very strong, durable and light weight material that guarantees resistance to shocks and scratches. A functional carry-on trolley that makes it the perfect companion for every trip.', 1),
 (3, 'FPM Milano Bank Trunk on Wheels', '245.9900', 68, 'https://www.luggagepros.com/cdn/shop/products/FPM-Milano-Bank-Trunk-on-Wheels-2_1200x.jpg?v=1667823480', 'Trunk on Wheels – 100% Aluminum. 4-wheeled suitcase. The dual wheels guarantee great stability and smoothness. The suitcase has an incorporated TSA lock combined with two maxi butterfly locks that ensures safety. The two handles are fine Italian leather, embossed with the FPM logo. The interior of the suitcase includes handcrafted belts in fine Italian leather. The lining is padded and removable. The interior organizer allows for optimum arrangement of contents. Ideal for 13/14-day journeys.\r\n\r\n', 1),
 (4, 'Chiara Ferragni\r\n', '300.9900', 50, 'https://cdn.vuahanghieu.com/unsafe/0x900/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2022/12/vali-chiara-ferragni-logomania-hardshell-suitcase-mau-den-size-cabin-63abf6341d16a-28122022145428.jpg', 'Chiara Ferragni\r\nmedium Logomania travel case', 1),
@@ -187,13 +179,6 @@ CREATE TABLE `users` (
   `phone` varchar(100) DEFAULT NULL,
   `address` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `full_name`, `email`, `username`, `password`, `phone`, `address`) VALUES
-(2, 'Nguyen Khanh', 'scwar69@gmail.com', '1', 'c4ca4238a0b923820dcc509a6f75849b', '0825113336', '185 Tran Dai Nghia');
 
 --
 -- Indexes for dumped tables
@@ -247,7 +232,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -259,7 +244,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
