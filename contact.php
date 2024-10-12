@@ -19,6 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+	
 </head>
 
 <body>
@@ -82,14 +83,10 @@
 					<div class="follow_us_contents">
 						<h1>Follow Us</h1>
 						<ul class="social d-flex flex-row">
-							<li><a href="#" style="background-color: #3a61c9"><i class="fa fa-facebook"
-										aria-hidden="true"></i></a></li>
-							<li><a href="#" style="background-color: #41a1f6"><i class="fa fa-twitter"
-										aria-hidden="true"></i></a></li>
-							<li><a href="#" style="background-color: #fb4343"><i class="fa fa-google-plus"
-										aria-hidden="true"></i></a></li>
-							<li><a href="#" style="background-color: #8f6247"><i class="fa fa-instagram"
-										aria-hidden="true"></i></a></li>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
 						</ul>
 					</div>
 

@@ -16,4 +16,4 @@ if(isset($cart[$id])){
 // save cart to session
 $_SESSION["cart"] = $cart;
 
-header("Location: product.php?id=$id");
+header("Location: cartpro.php");

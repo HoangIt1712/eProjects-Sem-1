@@ -30,16 +30,16 @@
      	            <?php } ?>
 
                     <div class="input-field">
-                        <input type="text" class="input" placeholder="  Username" name="username" >
+                        <input type="text" class="input" placeholder="Username" name="username" >
                         <i class="bx bx-user"></i>
                     </div>
                     
                     <div class="input-field">
-                        <input type="password" class="input" placeholder="  Password" name="password" >
+                        <input type="password" class="input" placeholder="Password" name="password" >
                         <i class="bx bx-lock-alt"></i>
                     </div>
                     
-                    <div class="input-field">
+                    <div class="login">
                         <!-- <a class="sign" type="submit">Submit</a> -->
                         <button class="sign" type="submit">Login</button>
                     </div>

@@ -68,8 +68,8 @@ if($order_id != null){
 
     if($payment_method =="PAYPAL"){
         // thong tin tai khoan paypal
-        $client_id = "AYGCUxQ6g9idO3Pb2x_RUxEJtEObZTEf_eOOBvtapsgA35A3EynJZukE72ssnTsH7thJrS4Zb9HgIAnI";
-        $client_secret= "EGBcP8sWdJUgxKiTAETqOmHGyQK1NW7DRD5A_iHgKegMo6q4gea23c3-hHv61DpamBON1Q4ei_0xuznA";
+        $client_id = "ASG7H0EDPdEvgQR0iF2QIp9iuyCpGB7UR9KUTxmenTSJ7-WLF21hV1kY4LGEe0w7m88skuTg8kuSkvnp";
+        $client_secret= "EEmNnUUnG_ChacxJsnCNQzB4b29zZOxTTFX0tRM2Kqu9bpUpiQbqEfzRh5KCWO62arb41z3HcXhDD14j";
 
         // url nhan ket qua 
         $success_url = "http://localhost:8888/success_paypal.php?order_id=$order_id";

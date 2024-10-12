@@ -94,3 +94,10 @@
 .box {
   padding-top: 160px;
 }
+
+.login {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  text-align: center;
+}

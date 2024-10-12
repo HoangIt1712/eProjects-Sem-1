@@ -982,6 +982,8 @@ section
 .follow_us_contents
 {
 	margin-top: 32px;
+	background-color: lightgray;
+	border: 1px solid #555;
 }
 .social
 {

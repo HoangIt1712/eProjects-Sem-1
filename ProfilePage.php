@@ -1,10 +1,7 @@
 <?php 
 session_start();
 include 'db_conn.php';
-if (!isset($_SESSION['id'])) {
-    header("Location: index.php");
-    exit();
-}
+
 
 // Get current user data
 $id = $_SESSION['id'];
@@ -13,8 +10,6 @@ $result = mysqli_query($conn, $sql);
 $user = mysqli_fetch_assoc($result);
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
