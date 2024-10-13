@@ -51,6 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<script src="js/formValidation.js"></script>
 <link rel="stylesheet" href="css/checkout1.css?v=<?php echo time(); ?>">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -118,27 +119,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
               <!-- Thông tin người dùng (Customer Information) với Bootstrap -->
               <h4>Customer Information</h4>
-              <form action="/place_order.php" method="post">
-              <table class="table table-bordered">
-                  <tbody>
-                      <tr>
-                          <td><strong>Full Name</strong></td>
-                          <td><input type="text" name="customer_name" class="form-control" placeholder="Enter Full Name"></td>
-                      </tr>
-                      <tr>
-                          <td><strong>Email</strong></td>
-                          <td><input type="text" name="email" class="form-control" placeholder="Enter Email"></td>
-                      </tr>
-                      <tr>
-                          <td><strong>Shipping Address</strong></td>
-                          <td><input type="text" name="shipping_address" class="form-control" placeholder="Enter Shipping Address"></td>
-                      </tr>
-                      <tr>
-                          <td><strong>Telephone</strong></td>
-                          <td><input type="text" name="telephone" class="form-control" placeholder="Enter Telephone"></td>
-                      </tr>
-                  </tbody>
-              </table>
+              <form action="/place_order.php" method="post" id="orderForm" onsubmit="return validateForm()">
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <td><strong>Full Name</strong></td>
+            <td>
+              <input type="text" id="customer_name" name="customer_name" class="form-control" placeholder="Enter Full Name" oninput="validateName()">
+              <small id="nameError" style="color:red;"></small>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Email</strong></td>
+            <td>
+              <input type="text" id="email" name="email" class="form-control" placeholder="Enter Email" oninput="validateEmail()">
+              <small id="emailError" style="color:red;"></small>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Shipping Address</strong></td>
+            <td>
+              <input type="text" id="shipping_address" name="shipping_address" class="form-control" placeholder="Enter Shipping Address" oninput="validateAddress()">
+              <small id="addressError" style="color:red;"></small>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Telephone</strong></td>
+            <td>
+              <input type="text" id="telephone" name="telephone" class="form-control" placeholder="Enter Telephone" oninput="validateTelephone()">
+              <small id="telephoneError" style="color:red;"></small>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
               
 
               <div class="accordion" id="accordionPayment">
@@ -202,7 +216,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                       <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Grand Total</strong><h5 class="font-weight-bold"><?php echo ($grand_total + $shipping - $discount);?> $</h5></li>
                   </ul>
               </div>
-              <button type="submit" class="btn btn-danger w-100"> Place Order </a>
+              <button type="submit" class="btn btn-primary btn-lg w-100"> Place Order </a>
             </div>
           </div>
           </form>
